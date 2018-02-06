@@ -39,7 +39,6 @@ env:
     - python=3.5  CONDA_PY=35
     - python=3.6  CONDA_PY=36
   global:
-
     - PACKAGENAME="toyNN"
     - ORGNAME="kam_haider"
 
