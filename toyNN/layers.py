@@ -136,7 +136,7 @@ class ReLU(object):
 
 class Input(object):
     """
-    Implements a layer class for the input to maintain consistency in layers are dealth with.
+    Implements a layer class for the input to maintain consistency in layers interface.
     """
 
     def __init__(self, n_nodes, activations=None):

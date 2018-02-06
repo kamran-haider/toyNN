@@ -6,17 +6,23 @@ import h5py
 
 def initialize_weights(layers, scaling_method="constant", scaling_constant=0.01):
     """
+    Initializes weights and biases for network layers.
 
     Parameters
     ----------
-    layer_dims :
-    scaling :
-    scaling_constant :
+    layers : list
+        A list of toyNN.layer objects
+    scaling_method : string
+        Specification of the scaling method for weights
+    scaling_constant : float
+
 
     Returns
     -------
-
+    None : NoneType
+        Updates weights attribute for each toyNN.layer in layers.
     """
+
     layer_sizes = [l.n_nodes for l in layers]
     supported_scaling = {"constant": scaling_constant, "xavier": 1.0, "he": 2.0, "custom": None}
     num_layers = len(layer_sizes)
