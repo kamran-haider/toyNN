@@ -1,5 +1,5 @@
 package:
-  name: toyNN
+  name: toynn
   version: 1.0.0
 
 source:
@@ -18,11 +18,11 @@ test:
   requires:
     - pytest
   imports:
-    - toyNN
+    - toynn
   commands:
-    - python -m pytest toyNN
+    - python -m pytest toynn
 
 about:
-  home: https://github.com/kamran-haider/toyNN
+  home: https://github.com/kamran-haider/toynn
   license: MIT
   summary: A bare-bones Python implementation of deep learning neural networks.
