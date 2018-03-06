@@ -11,12 +11,12 @@ requirements = ["numpy",]
 test_requirements = ["pytest",]
 
 setup(
-    name='toyNN',
+    name='toynn',
     version='0.1.0',
     description="A bare-bones implementation of deep learning neural networks.",
     author="Kamran Haider",
     author_email='kamranhaider.mb@gmail.com',
-    url='https://github.com/kamran-haider/toyNN',
+    url='https://github.com/kamran-haider/toy',
     packages=find_packages(include=['toyNN']),
     include_package_data=True,
     install_requires=requirements,

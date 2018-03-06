@@ -1,10 +1,8 @@
 import os
-import numpy as np
 from numpy.testing import assert_array_almost_equal, assert_array_equal
-import h5py
-from toyNN.models import BasicDeepModel
-from toyNN.layers import *
-from toyNN.utils import *
+from toynn.models import BasicDeepModel
+from toynn.layers import *
+from toynn.utils import *
 
 
 def test_basic_deep():

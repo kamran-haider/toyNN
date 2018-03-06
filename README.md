@@ -8,9 +8,9 @@ A bare-bones implementation of deep learning neural networks. `toynn` is not com
 such as as `Tensorflow`, `Keras`, `PyTorch` and many others. It's goal is not to train production quality deep learning 
 neural networks. It is a personal project born out of a desire to:
 
-* Understanding deep learning neural networks by coding them up and gain insights into various tricks that make them so powerful.
+* Understand deep learning neural networks by coding them up and gain insights into various tricks that make them so powerful.
 * Gain practice in prototyping and shipping machine learning algorithms utilzing python/git/CI ecosystem.
-* Develop an understanding of productive API design, by achieving tight integration of `toynn` with `scikit-learn`'s estimator API.
+* Develop an understanding of productive API design, by achieving tight integration between `toynn` and `scikit-learn`'s estimator API.
 
 
 

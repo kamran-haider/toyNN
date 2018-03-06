@@ -1,7 +1,9 @@
+"""
+Module to implement deep learning network models made up of various components.
+"""
 import numpy as np
-
-from layers import *
-from utils import *
+from toynn.layers import *
+from toynn.utils import *
 
 class BasicDeepModel(object):
     """

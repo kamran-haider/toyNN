@@ -11,11 +11,12 @@ def initialize_weights(layers, scaling_method="constant", scaling_constant=0.01)
     Parameters
     ----------
     layers : list
-        A list of toyNN.layer objects
+        A list of toynn.layer objects
     scaling_method : string
-        Specification of the scaling method for weights
+        Specification of the scaling method for weights, allowed methods are:
+        constant, xavier, he and custom
     scaling_constant : float
-
+        If scaling_method is constant then scale weights by this factor.
 
     Returns
     -------
@@ -27,7 +28,7 @@ def initialize_weights(layers, scaling_method="constant", scaling_constant=0.01)
     supported_scaling = {"constant": scaling_constant, "xavier": 1.0, "he": 2.0, "custom": None}
     num_layers = len(layer_sizes)
 
-    if scaling_method not in supported_scaling.keys() + ["custom"]:
+    if scaling_method not in supported_scaling.keys():
         raise ValueError(
             "Unsupported scaling %s, please choose from the following: \n%s"
             % (scaling_method, "  ".join(supported_scaling.keys())))

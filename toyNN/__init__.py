@@ -7,6 +7,6 @@ __maintainer__ = "Kamran Haider"
 __email__ = "kamranhaider.mb@gmail.com"
 
 
-from toyNN import layers
-from toyNN import models
-from toyNN import utils
+from toynn import layers
+from toynn import models
+from toynn import utils

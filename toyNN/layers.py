@@ -4,8 +4,7 @@ import numpy as np
 import random
 import sys
 
-from utils import *
-
+from toynn.utils import *
 
 class Sigmoid(object):
     """
