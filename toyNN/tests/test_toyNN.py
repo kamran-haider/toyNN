@@ -5,6 +5,9 @@ from toynn.layers import *
 from toynn.utils import *
 
 
+def test
+
+
 def test_basic_deep():
     """
     A broad integration type test, which trains a BasicDeepModel and check if its costs are

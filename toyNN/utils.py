@@ -21,7 +21,7 @@ def initialize_weights(layers, scaling_method="constant", scaling_constant=0.01)
     Returns
     -------
     None : NoneType
-        Updates weights attribute for each toyNN.layer in layers.
+        Returns a None object. Updates weights attribute for each toyNN.layer in layers.
     """
 
     layer_sizes = [l.n_nodes for l in layers]
@@ -47,15 +47,16 @@ def initialize_weights(layers, scaling_method="constant", scaling_constant=0.01)
         else:
             layers[l].weights = np.random.randn(layer_sizes[l], layer_sizes[l - 1]) * np.sqrt(scaling_factor/layer_sizes[l-1])
             layers[l].biases = np.zeros((layer_sizes[l], 1))
+    return
 
 
 def cross_entropy_loss(y, y_hat):
     """
-
+    Calculate cross-entropy loss.
     Parameters
     ----------
     y :
-    probs :
+    y_hat :
 
     Returns
     -------
@@ -72,6 +73,18 @@ def cross_entropy_loss(y, y_hat):
 
 
 def cross_entropy_loss_derivative(y, y_hat):
+    """
+    Calculate derivative of cross-entropy loss function.
+
+    Parameters
+    ----------
+    y :
+    y_hat :
+
+    Returns
+    -------
+
+    """
     dA = -(np.divide(y, y_hat) - np.divide(1 - y, 1 - y_hat))
     return dA
 
