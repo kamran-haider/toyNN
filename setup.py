@@ -5,11 +5,6 @@
 
 from setuptools import setup, find_packages
 
-
-requirements = ["numpy",]
-
-test_requirements = ["pytest",]
-
 setup(
     name='toynn',
     version='0.1.0',
