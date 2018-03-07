@@ -14,11 +14,11 @@ install:
   - source devtools/travis-ci/install_miniconda.sh
   - export PYTHONUNBUFFERED=true
   - export PATH=$HOME/miniconda/bin:$PATH
-  - conda config --add channels conda-forge
+#  - conda config --add channels conda-forge
 
 script:
   # Add org channel
-  - conda config --add channels ${ORGNAME}
+#  - conda config --add channels ${ORGNAME}
   # Create a test environment
   - conda create --quiet --yes -n test python=$python
   # Activate the test environment
@@ -32,7 +32,7 @@ script:
   #- cd devtools && nosetests $PACKAGENAME --nocapture --verbosity=2 --with-doctest --with-timer && cd ..
 
 os:
-  - osx
+#  - osx
   - linux
 
 
