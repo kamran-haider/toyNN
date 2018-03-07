@@ -14,7 +14,6 @@ setup(
     url='https://github.com/kamran-haider/toynn',
     packages=find_packages(),
     include_package_data=True,
-    install_requires=requirements,
     license="MIT license",
     zip_safe=False,
     keywords='toyNN',
