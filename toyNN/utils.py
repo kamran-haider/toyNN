@@ -39,7 +39,7 @@ def initialize_weights(layers, scaling_method="constant", scaling_constant=0.01)
             scaling_factor = supported_scaling[scaling_method]
 
         if scaling_method == "custom":
-            layers[l].weights = np.random.randn(layer_sizes[l], layer_sizes[l - 1])  /np.sqrt(layer_sizes[l-1])
+            layers[l].weights = np.random.randn(layer_sizes[l], layer_sizes[l - 1])  / np.sqrt(layer_sizes[l-1])
             layers[l].biases = np.zeros((layer_sizes[l], 1))
         elif scaling_method == "constant":
             layers[l].weights = np.random.randn(layer_sizes[l], layer_sizes[l - 1]) * scaling_factor

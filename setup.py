@@ -17,7 +17,7 @@ setup(
     author="Kamran Haider",
     author_email='kamranhaider.mb@gmail.com',
     url='https://github.com/kamran-haider/toy',
-    packages=find_packages(include=['toyNN']),
+    packages=find_packages(include=['toynn']),
     include_package_data=True,
     install_requires=requirements,
     license="MIT license",

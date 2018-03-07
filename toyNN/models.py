@@ -7,9 +7,24 @@ from toynn.utils import *
 
 class BasicDeepModel(object):
     """
-    Implements a bare-bones neural network.
+    Implements a Basic deep learning neural network.
     """
     def __init__(self, X, Y, layers, weight_initialization="constant"):
+        """
+        Initialize model with training data, labels and layers
+
+        Parameters
+        ----------
+        X : numpy.ndarray
+            Training dataset, a matrix of dimensions n_features * n_examples
+        Y : labels
+
+        layers : list
+
+        weight_initialization : str
+            Method used for weight initialization.
+
+        """
 
         self.train_X = X
         self.train_Y = Y

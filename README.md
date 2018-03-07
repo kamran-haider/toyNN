@@ -4,14 +4,9 @@ toynn
 ======
 
 
-A bare-bones implementation of deep learning neural networks. `toynn` is not comparable to powerful deep learning libraries
+A bare-bones implementation of deep learning neural networks using `numpy`. `toynn` is not comparable to powerful deep learning libraries
 such as as `Tensorflow`, `Keras`, `PyTorch` and many others. It's goal is not to train production quality deep learning 
-neural networks. It is a personal project born out of a desire to:
-
-* Understand deep learning neural networks by coding them up and gain insights into various tricks that make them so powerful.
-* Gain practice in prototyping and shipping machine learning algorithms utilzing python/git/CI ecosystem.
-* Develop an understanding of productive API design, by achieving tight integration between `toynn` and `scikit-learn`'s estimator API.
-
+neural networks. It is a personal project born out of a desire to, understand deep learning neural networks by coding them up and gain insights into various tricks that make them so powerful.
 
 
 Features
@@ -27,7 +22,6 @@ TODO
 * Dropout
 * L1 and L2 Regularization
 * Mini-batch gradient descent
-
 
 
 License
